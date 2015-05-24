@@ -2,7 +2,6 @@
 title: "CodeBook.md"
 author: "Risa Allen"
 date: "May 23, 2015"
-output: html_document
 ---
 
 STUDY DESIGN
@@ -15,21 +14,22 @@ from accelerometers from the Samsung Galaxy S smartphone.
 
 Below is the information provided in the README.txt file of the UCI HAR Dataset
 describing the parameters of the experiments and how the data was preproccessed
-to get the measurement values:
-
-==================================================================
-
-Human Activity Recognition Using Smartphones Dataset
+to get the measurement values:  
+  
+***
+Human Activity Recognition Using Smartphones Dataset  
 Version 1.0
-==================================================================
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
-==================================================================
+***
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.  
+Smartlab - Non Linear Complex Systems Laboratory  
+DITEN - Universit‡ degli Studi di Genova.  
+Via Opera Pia 11A, I-16145, Genoa, Italy.  
+activityrecognition@smartlab.ws  
+www.smartlab.ws  
+
+***
 
 The experiments have been carried out with a group of 30 volunteers within an 
 age bracket of 19-48 years. Each person performed six activities (WALKING, 
@@ -113,14 +113,14 @@ CODE BOOK
     - Walking Downstairs
     - Sitting
     - Standing
-    - Laying
+    - Laying  
 
 
 - **Subject** (Column 2)
 
     *Number identifying the test subject performing each experiment*
         
-    - 1-30
+    - 1-30  
 
 
 - **Mean and standard deviation measurements** (Columns 3-81) 
@@ -206,15 +206,16 @@ CODE BOOK
     - fBodyAccMag.std..              
     - fBodyBodyAccJerkMag.std..       
     - fBodyBodyGyroMag.std..          
-    - fBodyBodyGyroJerkMag.std..
+    - fBodyBodyGyroJerkMag.std..  
 
 
 Below is the information provided in the features_info.txt file of the UCI HAR 
 Dataset describing the variables in the original data set before it was cleaned:
 
-Feature Selection 
-=================
+***
+Feature Selection  
 
+***
 The features selected for this database come from the accelerometer and 
 gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals 
 (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they 
