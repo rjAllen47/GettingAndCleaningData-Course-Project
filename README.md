@@ -11,7 +11,6 @@ The run_analysis.R script accomplishes the following:
 The tidy dataset can be viewed with the following code:
 
 ```{r}
-tidyData <- read.table("http://s3.amazonaws.com/coursera-uploads/user-a063f05fba3e63e76be1218f/973501/asst-3/73b7cdd0fffa11e4a044ebf8a06f5f88.txt", 
-header = TRUE)
+tidyData <- read.table("http://s3.amazonaws.com/coursera-uploads/user-a063f05fba3e63e76be1218f/973501/asst-3/2792e98001c611e59f2339ce6bf51017.txt", header = TRUE)
 View(tidyData)
 ```

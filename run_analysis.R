@@ -1,3 +1,4 @@
+library (dplyr)
 ## Create a directory and download/unzip the data file if not already loaded
 if (!file.exists("./GCD Course Project")){
         dir.create("./GCD Course Project")
@@ -41,7 +42,7 @@ data <- rbind(xTest, xTrain)
 featuresFile <- "./GCD Course Project/UCI HAR Dataset/features.txt"
 colNames <- read.table(featuresFile)
 columnNames <- as.vector(colNames$V2)
-names(data) <- columnNames
+names(data) <- as.character(columnNames)
 
 ## Extract only measurements on the mean and standard deviation
 dataMean <- data[, grepl("mean", names(data))]

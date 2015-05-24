@@ -69,13 +69,14 @@ the data for the test group:
         
 The following steps were used to clean the original data set from UCI:
 
-1. Since the training and test data sets both contain the same variables, we can combine the two data sets over each variable to create larger, merged data sets. This
-was done using rbind for the subject, activity and measurement data sets.
+1. Since the training and test data sets both contain the same variables, we can 
+combine the two data sets over each variable to create larger, merged data sets. 
+This was done using rbind for the subject, activity and measurement data sets.
 2. Since we are only interested in the mean and standard deviation measurements,
 grepl was used to extract only the variables related to the mean and standard
 deviation.
-3. Then we bind the subject, activiy and narrow measurement data sets together
-with cbind.
+3. Then the subject, activiy and narrow measurement data sets were merged 
+together with cbind.
 4. At this point, the activity labels are still just numbers 1-6 corresponding
 to the activities listed in the activity_labels.txt file. Using the information
 in that file, the activities are turned into factors and the levels labeled
@@ -96,12 +97,14 @@ in the lectures:
 
 To read the tidy data set into R, please use the following code:
 
-        tidyData <- read.table("http://s3.amazonaws.com/coursera-uploads/user-a063f05fba3e63e76be1218f/973501/asst-3/73b7cdd0fffa11e...", header = TRUE)
+        tidyData <- read.table("http://s3.amazonaws.com/coursera-uploads/user-a063f05fba3e63e76be1218f/973501/asst-3/2792e98001c611e59f2339ce6bf51017.txt", header = TRUE)
         View(tidyData)
 
 
 CODE BOOK
 =========
+
+The tidy data set contains the following variables:
 
 - **Activity** (Column 1)
 
